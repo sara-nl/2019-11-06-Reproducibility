@@ -32,6 +32,7 @@ email: "training@surfsara.nl"
 
 # Sites.
 surfsara_site: "https://www.surf.nl"
+nlesc_site: "https://www.esciencecenter.nl/"
 amy_site: "https://amy.software-carpentry.org/workshops"
 carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"
