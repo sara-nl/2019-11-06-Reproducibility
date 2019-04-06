@@ -89,6 +89,8 @@ the pitch.
 
 This workshop is organized in collaboration with the <a href="{{site.nlesc_site}}">Netherlands eScience Center (NLeSC)</a>.
 
+The aim of this lesson is to provide practical suggestions that contribute to making research software and its source code more discoverable, reusable and transparent. This lesson provides high level guidance on good practices for scientific software development as well as practical examples of these recommendations. As an applied part, an basic introduction to the use of a cluster and cloud services is provided in order to give an overview of different specific systems that can be used as platforms for software development and testing.
+
 {% comment %}
 AUDIENCE
 
