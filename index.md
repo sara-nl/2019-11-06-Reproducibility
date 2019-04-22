@@ -71,7 +71,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Presentation</h2>
 
 {% comment %}
 INTRODUCTION
@@ -87,9 +87,13 @@ the pitch.
 {% include lc/intro.html %}
 {% endif %}
 
-This workshop is organized in collaboration with the <a href="{{site.nlesc_site}}">Netherlands eScience Center (NLeSC)</a>.
+<h2 id="general">General Information</h2>
 
-The aim of this lesson is to provide practical suggestions that contribute to making research software and its source code more discoverable, reusable and transparent. This lesson provides high level guidance on good practices for scientific software development as well as practical examples of these recommendations. As an applied part, an basic introduction to the use of a cluster and cloud services is provided in order to give an overview of different specific systems that can be used as platforms for software development and testing.
+If you are facing the big challenge of developing your own research software project only with the help of your laptop, this is the right workshop for you! In this workshop you will learn practical basics to make research software more discoverable, reusable and transparent, and how to use the HPC Cloud platform to help you to achieve your goals.
+
+In particular, you will get an overview of good practices that will help you start your Open Source Software project. You will get some insight on helpful tools for unit testing, package management, continuous integration and containerisation.
+
+You will also be learning how to use the high performance compute systems at SURFsara to enhance your research. In particular you will experience how to become the administrator of your own HPC environment using the HPC Cloud platform. Here you’ll be learning how to use the web application to create and manage virtual machines, with which you can run your tasks using the operating system and graphical interface of your choice.
 
 {% comment %}
 AUDIENCE
