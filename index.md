@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: swc        # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "Good Practices for HPC and Cloud"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Good Practices for scientific software development using High Performance Computing (HPC) in the cloud" # brief name of host site without address (e.g., "Euphoric State University")
 shortaddress: "SURFsara, Amsterdam (NL)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 address: "SURFsara (rooms VK1/VK2), Science Park 140, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
@@ -12,7 +12,7 @@ humandate: "May 22-23, 2019"    # human-readable dates for the workshop (e.g., "
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-05-22      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-05-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Carlos Martínez Ortiz (NLeSC)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Carlos Martínez Ortiz (NLeSC), Ander Astudillo (SURFsara)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Dafne van Kuppevelt (NLeSC)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["carlos.teijeiro@surfsara","c.martinez@esciencecenter.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
@@ -70,22 +70,6 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
-
-<h2 id="general">Presentation</h2>
-
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-{% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
 <h2 id="general">General Information</h2>
 
@@ -149,6 +133,10 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>
+    You don't need to have any previous knowledge of the tools
+    that will be presented at the workshop.
+  </strong>
 </p>
 
 {% comment%}
@@ -236,6 +224,35 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 
 {% comment %}
+SYLLABUS
+
+Show what topics will be covered.
+
+1. If your workshop is R rather than Python, remove the comment
+around that section and put a comment around the Python section.
+2. Some workshops will delete SQL.
+3. Please make sure the list of topics is synchronized with what you
+intend to teach.
+4. You may need to move the div's with class="col-md-6" around inside
+the div's with class="row" to balance the multi-column layout.
+
+This is one of the places where people frequently make mistakes, so
+please preview your site before committing, and make sure to run
+'tools/check' as well.
+{% endcomment %}
+<h2 id="syllabus">Contents of the course</h2>
+
+{% if page.carpentry == "swc" %}
+{% include sc/syllabus.html %}
+{% elsif page.carpentry == "dc" %}
+{% include dc/syllabus.html %}
+{% elsif page.carpentry == "lc" %}
+{% include lc/syllabus.html %}
+{% endif %}
+
+<hr/>
+
+{% comment %}
 SCHEDULE
 
 Show the workshop's schedule.  Edit the items and times in the table
@@ -271,35 +288,6 @@ e.g., '2015-06-10-esu'.
 <hr/>
 
 {% comment %}
-SYLLABUS
-
-Show what topics will be covered.
-
-1. If your workshop is R rather than Python, remove the comment
-around that section and put a comment around the Python section.
-2. Some workshops will delete SQL.
-3. Please make sure the list of topics is synchronized with what you
-intend to teach.
-4. You may need to move the div's with class="col-md-6" around inside
-the div's with class="row" to balance the multi-column layout.
-
-This is one of the places where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if page.carpentry == "swc" %}
-{% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/syllabus.html %}
-{% endif %}
-
-<hr/>
-
-{% comment %}
 SETUP
 
 Delete irrelevant sections from the setup instructions.  Each
@@ -316,7 +304,7 @@ please preview your site before committing, and make sure to run
 <p>
   To participate in this
   {% if page.carpentry == "swc" %}
-  SURFsara/NLeSC
+  SURF/NLeSC
   {% elsif page.carpentry == "dc" %}
   Data Carpentry
   {% elsif page.carpentry == "lc" %}
@@ -877,3 +865,19 @@ please preview your site before committing, and make sure to run
   </ol>
 </div>
 {% endcomment %}
+
+<h2 id="general">Presentation</h2>
+
+{% comment %}
+INTRODUCTION
+
+Edit the general explanatory paragraph below if you want to change
+the pitch.
+{% endcomment %}
+{% if page.carpentry == "swc" %}
+{% include sc/intro.html %}
+{% elsif page.carpentry == "dc" %}
+{% include dc/intro.html %}
+{% elsif page.carpentry == "lc" %}
+{% include lc/intro.html %}
+{% endif %}
