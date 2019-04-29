@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: swc        # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "Good Practices for scientific software development using High Performance Computing (HPC) in the cloud" # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Good Practices for High Performance Computing and Cloud" # brief name of host site without address (e.g., "Euphoric State University")
 shortaddress: "SURFsara, Amsterdam (NL)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 address: "SURFsara (rooms VK1/VK2), Science Park 140, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
