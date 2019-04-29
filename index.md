@@ -866,18 +866,3 @@ please preview your site before committing, and make sure to run
 </div>
 {% endcomment %}
 
-<h2 id="general">Presentation</h2>
-
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-{% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
