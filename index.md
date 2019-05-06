@@ -314,7 +314,7 @@ More information will be coming soon!
 <p>
   To participate in this
   {% if page.carpentry == "swc" %}
-  SURF/NLeSC
+  SURF/eScience
   {% elsif page.carpentry == "dc" %}
   Data Carpentry
   {% elsif page.carpentry == "lc" %}
