@@ -75,7 +75,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 Nowadays one of the biggest challenges in research is to make information available, transferable and reproducible all the time, either for collaborative work in a big team or for the correct dissemination of results in the scientific community. Therefore, this workshop is intended to give you the basic practical skills to make research software more discoverable, reusable and transparent.
 
-In this workshop you will get an overview of good practices that will help you to start your own Open Source Software project. You will get some insight on helpful tools for unit testing, package management, continuous integration. Using this basic knowledge you will be able to start turning your research ideas into large-scale software projects.
+In this workshop you will get an overview of good practices that will help you to start your own Open Source Software project. You will get some insight on helpful tools for unit testing, package management and continuous integration. Using this basic knowledge you will be able to start turning your research ideas into large-scale software projects.
 
 Special focus will be on the use of containers with singularity. Here you will learn how to create and manage different system images that will contain specific versions of your application and all dependent libraries. With this, you will ensure reproducibility of your own results and you allow others to verify your results.
 
@@ -134,7 +134,7 @@ Modify the block below if there are any special requirements.
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
   <strong>
-    Participants should have at least a basic level of programming experience (preferably in Python).
+    Participants should have at least some affinity with the use of the Linux shell and a basic level of programming experience (preferably in Python).
   </strong>
 </p>
 
